@@ -1,0 +1,87 @@
+.background{
+    background-image: url(../../Imgs/2861653.jpg);
+    background-position:top;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.main-center{
+    width: 100%;
+    display: flex;
+    
+    justify-content: space-around;
+   
+}
+
+.left{
+    width: 60%;
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+  justify-content: space-around;
+    color: red;
+}
+
+.inside-left{
+    /* border: 4px solid white; */
+    padding: 10px;
+    width: 70%;
+    /* align-items: center;
+    
+    justify-content: space-around; */
+}
+.inside-left h1{
+    font-size: 5vmax;
+    color: rgb(219, 18, 169);
+}
+.inside-left p{
+    font-size: large;
+    
+    font-style: normal;
+    text-align: justify;
+    text-justify: inter-word;
+    color: white;
+    line-height: 1.5;
+}
+.right{
+    width:40% ;
+    /* color: red; */
+    margin-top:3cm ;
+    float: right;
+    
+}
+.second-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.sale{
+    width: 60%;
+    /* font-size: 0vmax; */
+    text-align: center;
+    color: blue;
+     font-style: italic;
+     border-bottom: 2px solid white;
+    /* border: 2px solid white; */
+}
+.sale h2{
+    font-size: 3vmax;
+   color: rgb(219, 18, 169);
+}
+
+.btnclass{
+   
+    text-align: center;
+}
+
+ .btn{
+     border-radius: 10px;
+     padding: 10px;
+     border: none;
+      outline: none;
+      color: white;
+     font-size: large;
+      cursor: pointer;
+     background-color: rgb(224, 100, 204);
+ }
