@@ -41,7 +41,7 @@
     font-style: normal;
     text-align: justify;
     text-justify: inter-word;
-    color: white;
+    color: rgb(20, 52, 102);
     line-height: 1.5;
 }
 .right{
@@ -85,3 +85,148 @@
       cursor: pointer;
      background-color: rgb(224, 100, 204);
  }
+
+
+
+
+  /* For Large Screen Mobile */
+
+ @media(max-width:425px){
+     .background{
+        background-image: url(../../Imgs/bg_c.JPG);
+         /* width: 100%; */
+         background-position:top;
+         background-size: cover;
+         height: 100vh;
+         display: block;
+     }
+     .main-center{
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        /* display: block; */
+         /* display: flex;
+         display: block; */
+        align-items: center;
+         /* justify-content: space-around; */
+       
+    }
+    .right{
+        width:50% ;
+         
+        order:1;
+        /* margin-top: -0.1px; */
+    }
+    .right img{
+        height: 100px;
+        width: 180px;
+       
+    }
+     .left{
+         order:2;
+        width: 100%;
+         display: flex;
+       margin-top: -20px;
+        
+    }
+    .inside-left{
+
+        width: 100%;
+       
+    }
+    .inside-left h1{
+        font-size: 5vmax;
+        color: rgb(219, 18, 169);
+    }
+    .inside-left p{
+        font-size: large;
+        
+        font-style: normal;
+        text-align: justify;
+        text-justify: inter-word;
+        color: rgb(20, 52, 102);
+        line-height: 1.5;
+    }
+    .sale{
+        width: 40%;
+        
+        text-align: center;
+        
+         font-style: italic;
+         
+    }
+    .sale h2{
+        font-size: large;
+    }
+ }
+
+
+  /* For Small Screen window */
+ @media(max-width:320px){
+     
+    .right img{
+        height: 90px;
+        width: 160px;
+       
+    }
+  
+    .inside-left p{
+        font-size: medium;
+        
+        font-style: normal;
+        text-align: justify;
+        text-justify: inter-word;
+        color: rgb(20, 52, 102);
+        line-height: 1.5;
+    }
+    
+    .btn{
+        border-radius: 10px;
+        padding: 7px;
+        border: none;
+         outline: none;
+         color: white;
+        font-size: large;
+         cursor: pointer;
+        background-color: rgb(224, 100, 204);
+    }
+   
+    .sale{
+        width: 40%;
+        
+        text-align: center;
+        
+         font-style: italic;
+         
+    }
+    .sale h2{
+        font-size: larger;
+    }
+ }
+
+  /* For medium Screen Mobile */
+
+  @media(max-width:375px){
+
+    .inside-left p{
+        font-size: medium;
+        
+        font-style: normal;
+        text-align: justify;
+        text-justify: inter-word;
+        color: rgb(20, 52, 102);
+        line-height: 1.5;
+    }
+    .sale{
+        width: 40%;
+        
+        text-align: center;
+        
+         font-style: italic;
+         
+    }
+    .sale h2{
+        font-size: larger;
+    }
+   
+  }

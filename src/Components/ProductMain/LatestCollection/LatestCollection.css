@@ -1,0 +1,163 @@
+
+.collection{
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    
+    margin-top: 2cm;
+    width: 100%;
+}
+
+.firstpic{
+    width: 40%;
+
+ color: royalblue;
+}
+.firstpic img{
+    margin-left: 1cm;
+}
+.desc1{
+    width: 30%;
+    color: royalblue;
+    
+  
+}
+.desc1 h3{
+    color: rgb(238, 32, 169);
+    font-style: italic;
+    font-size: xx-large;
+}
+.text1{
+    display: block;
+    line-height: 2;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+
+.secondpic{
+    width: 40%;
+    order: 2;
+ color: royalblue;
+}
+.secondpic img{
+    margin-left: 1cm;
+}
+
+
+.desc2{
+    width: 30%;
+    color: royalblue;
+    order: 1;
+  
+}
+.desc2 h3{
+    color: rgb(238, 32, 169);
+    font-style: italic;
+    font-size: xx-large;
+}
+.text2{
+    display: block;
+    line-height: 2;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+
+@media(max-width:425px){
+    .collection{
+        flex-direction: column;
+        justify-content: space-between;
+        justify-items: center;
+        margin-top: -0.4cm;
+        width: 100%;
+        align-items: center;
+    }
+    
+    .firstpic{
+        margin-top: 1cm;
+        width: 96%;
+     align-items: center;
+     color: royalblue;
+    }
+    .firstpic img{
+        margin-left: -0.05cm;
+    }
+    .desc1{
+        width: 80%;
+        color: royalblue;
+        
+      
+    }
+    .desc1 h3{
+        color: rgb(238, 32, 169);
+        font-style: italic;
+        font-size: xx-large;
+    }
+    .text1{
+        display: block;
+        line-height: 2;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+    
+
+
+    .secondpic{
+        width: 96%;
+     align-items: center;
+     color: royalblue;
+        order: 1;
+      margin-top: 1cm;
+    }
+    .secondpic img{
+        margin-left: -0.05cm;
+    }
+    
+    
+    .desc2{
+        width: 80%;
+        color: royalblue;
+        order: 2;
+        justify-content: space-around;
+      
+    }
+    .desc2 h3{
+        color: rgb(238, 32, 169);
+        font-style: italic;
+        font-size: xx-large;
+    }
+    .text2{
+        display: block;
+        line-height: 2;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+
+}
+
+
+@media(max-width:375px){
+    .desc1 h3{
+        color: rgb(238, 32, 169);
+        font-style: italic;
+        font-size: 6vmax;
+    }
+    .desc2 h3{
+        color: rgb(238, 32, 169);
+        font-style: italic;
+        font-size: 6vmax;
+    }
+}
+@media(max-width:320px){
+    .desc1 h3{
+        color: rgb(238, 32, 169);
+        font-style: italic;
+        font-size: 5vmax;
+    }
+    .desc2 h3{
+        color: rgb(238, 32, 169);
+        font-style: italic;
+        font-size: 5vmax;
+    }
+}

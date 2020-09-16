@@ -2,13 +2,14 @@ import React from 'react'
 
 import {Routes,Route} from 'react-router-dom'
 import {ProductMain } from './ProductMain/ProductMain'
-import { Sectionheader } from './Sectionheader/Sectionheader'
+
+import { SectionheaderMain } from './Sectionheader/SectionheaderMain'
 
 
 export const MainPage = () => {
     return (
         <div>
-            <Sectionheader/>
+            <SectionheaderMain/>
             <Routes>
              
                 <Route path="/" element={<ProductMain/>} />
