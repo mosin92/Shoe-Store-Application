@@ -2,16 +2,18 @@ import React from 'react';
 
 import './App.css';
 import { MainPage } from './Components/MainPage';
-// import {GlobalDataProvider} from './Components/GlobalContext/GlobalContext' 
+import { SectionheaderMain } from './Components/Sectionheader/SectionheaderMain';
+import {GlobalDataProvider} from './Components/GlobalContext/GlobalContext' 
 
 function App() {
   return (
-    // <GlobalDataProvider>
+    <GlobalDataProvider>
     <div>
+      <SectionheaderMain/>
      <MainPage/>
       
       </div>
-      // {/* </GlobalDataProvider> */}
+       </GlobalDataProvider>
   );
 }
 

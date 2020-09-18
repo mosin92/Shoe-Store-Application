@@ -31,8 +31,8 @@ export const Sectionheader = () => {
                 <li>
                 <Link to="/">home</Link> </li> 
                  
-                <li><Link to="/">Browse Product</Link> </li> 
-                <li><Link to="/">About us</Link> </li> 
+                <li><Link to="browseproduct">Browse Product</Link> </li> 
+                <li><Link to="breif">About us</Link> </li> 
                     <li><Link to="/">Contact us</Link> </li> 
                        
              </ul>

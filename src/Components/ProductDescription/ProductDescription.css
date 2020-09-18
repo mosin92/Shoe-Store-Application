@@ -1,0 +1,19 @@
+
+.descp{
+    margin-left: 2cm;
+    margin-top: 1.5cm;
+}
+.descp h1{
+    color: royalblue;
+    font-style: italic;
+}
+.descp p{
+    color: rgb(87, 91, 92);
+}
+.detail-cart{
+    background: #333;
+    color: white;
+    text-decoration: none;
+    padding: 10px 25px;
+    display: inline-block;
+}

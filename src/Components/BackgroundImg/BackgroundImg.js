@@ -3,6 +3,7 @@ import './Background.css'
 import Aos from 'aos'
 import 'aos/dist/aos.css';
 import shoe from '../../Imgs/shoe.png'
+import {Link} from 'react-router-dom'
 
 export const BackgroundImg = () => {
 
@@ -31,9 +32,9 @@ export const BackgroundImg = () => {
                                        <h2>Sale 50% off </h2>
                                        </div>
                                        <div className="btnclass">
-
+                                       <Link to="browseproduct" >
                                           <button class="btn">Visit Website</button>
- 
+                                        </Link>
                                    </div>
                             </div>
                         
