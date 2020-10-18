@@ -5,8 +5,8 @@ import { Sectionheader } from './Sectionheader'
 export const SectionheaderMain = () => {
     return (
         <div>
-            <Sectionheader />
-            <BackgroundImg/>
+            {/* <Sectionheader />
+            <BackgroundImg/> */}
         </div>
     )
 }

@@ -17,3 +17,22 @@
     padding: 10px 25px;
     display: inline-block;
 }
+
+@media(max-width:425px){
+    .descp{
+        margin-left: -0.5cm;
+        margin-top: 1.5cm;
+    
+    }
+    .descp h1{
+        font-size:large;
+    }
+}
+
+@media(max-width:425px){
+    .descp{
+        margin-left: -0.5cm;
+        margin-top:-0.3cm;
+    
+    }
+}

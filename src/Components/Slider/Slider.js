@@ -1,7 +1,7 @@
 import React from 'react'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
-//  import './slider.css'
+ import './slider.css'
  //For image Data
 import id1img1 from '../../ProductImgs/MainPageProduct/Img1/front.jpg'
 import id1img2 from '../../ProductImgs/MainPageProduct/Img1/2.jpg'
@@ -46,7 +46,7 @@ import id6img5 from '../../ProductImgs/MainPageProduct/Img6/5.jpg'
 
 export const Slider = ( {id}) => {
  
-    console.log(id);
+    
     const imagedata = [{
         id: 1 ,
         image: [id1img1, id1img2, id1img3, id1img4,id1img5]
@@ -78,7 +78,7 @@ export const Slider = ( {id}) => {
     let getdata = imagedata.filter(item => item.id === parseInt(id, 10));
     // console.log(getdata);
     return (
-        <div className="main-slider">
+        <div className="slider" >
            
            <Carousel>
                 {

@@ -9,7 +9,7 @@ export const GlobalContext = createContext();
 
 export const GlobalDataProvider = ({children})=>{
     
-    let [data, setdata] = useState([
+    let data = [
         {
             id: 1,
             title: "New Collection shoes 1",
@@ -65,11 +65,43 @@ export const GlobalDataProvider = ({children})=>{
             Description: "New Collection has been your companion in happiness, both big and small "+
             " for over 50 years.Our roots are firmly grounded in Pakistan and with its people"
         }
-    ]);
-
+    ];
+    
+    let [cart, setcart] = useState([]);
+    const addcart = (id) => {
+         const check = cart.every(item => item.every(res => {
+            return res.id !== id
+         }))
+         
+            
+        if (check) {
+           
+            const productdata = data.filter(item => item.id === id);
+            setcart([...cart,productdata]);
+        
+        }
+        else {
+            alert("Product has already added in a cart");
+        }
+       
+    }
+    
+    const deletedata = (id) => {
+      
+        // const getdata = cart.map(item=>item.map(res=>res.))
+        // console.log(getdata);
+        // // setcart(getdata);
+        setcart(cart.map(item => item.filter(res => res.id !== id)));
+    }
+   
+    
     return (
         <GlobalContext.Provider value={{
-            data
+            data,
+            addcart,
+            cart,
+            deletedata
+
         }}>
             
             {children}

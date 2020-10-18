@@ -2,13 +2,17 @@ import React, { useContext } from 'react'
 import './BrowseProduct.css'
 import {GlobalContext} from '../GlobalContext/GlobalContext'
 import { Link } from 'react-router-dom';
+import { Sectionheader } from '../Sectionheader/Sectionheader';
 export const BrowseProduct = () => {
 
-    const {data} = useContext(GlobalContext);
+    const {data,addcart} = useContext(GlobalContext);
     
     return (
+        <>
+            <Sectionheader />
+            <br/>
         <div className="browse">
-
+            {/* <Sectionheader/> */}
             <h1>Trending Collection</h1>
             <div className="browse-product">
                 {
@@ -27,7 +31,7 @@ export const BrowseProduct = () => {
                                 <span>
                                    ${datas.price}
                                 </span>
-                                <button >Add to Card</button>
+                                <button onClick={()=>addcart(datas.id)} >Add to Card</button>
                                 {/* <button>View Details</button> */}
                                 </div>
                         </div>
@@ -36,11 +40,8 @@ export const BrowseProduct = () => {
                 }
 
             </div>
-
-
-
-            <p> Browse Product Page</p>
             
-        </div>
+            </div>
+            </>
     )
 }

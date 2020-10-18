@@ -1,14 +1,16 @@
 import React from 'react'
+import { BackgroundImg } from '../BackgroundImg/BackgroundImg';
 import { Footer } from '../Footer/Footer';
-// import {GlobalContext} from '../GlobalContext/GlobalContext'
+import { Sectionheader } from '../Sectionheader/Sectionheader';
+
 import { LatestCollection } from './LatestCollection/LatestCollection';
 import './Product.css'
 export const ProductMain = () => {
-    // let data = useContext(GlobalContext);
-    // console.log(data);
+  
     return (
         <div className="main">
-          
+           <Sectionheader/>
+            <BackgroundImg/>
             <div className="line">
                 <br />
                <p> Latest Collection </p>

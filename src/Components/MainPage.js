@@ -1,12 +1,11 @@
 import React from 'react'
 
 import {Routes,Route} from 'react-router-dom'
+import { AddCart } from './AddCart/AddCart'
 import { BrowseProduct } from './BrowseProduct/BrowseProduct'
 import { ProductDetails } from './ProductDetails/ProductDetails'
 import {ProductMain } from './ProductMain/ProductMain'
 
-
-import {BreifProduct} from './BreifProduct/BreifProduct'
 
 export const MainPage = () => {
     return (
@@ -15,9 +14,10 @@ export const MainPage = () => {
             <Routes>
              
                 <Route path="/" element={<ProductMain />} />
-                <Route path="browseproduct" element={<BrowseProduct />} />
+                <Route path="/browseproduct" element={<BrowseProduct />} />
                 <Route path="/browseproduct/:id" element={<ProductDetails />} />
-                <Route path="breif" element={<BreifProduct/>} />
+                <Route path="/addcart"  element={<AddCart/>} />
+               
             </Routes>
         </div>
     )

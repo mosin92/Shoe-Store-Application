@@ -1,8 +1,11 @@
 import React from 'react'
 import './ProductDescription.css'
 import {Link} from 'react-router-dom'
+
 export const ProductDescription = () => {
     return (
+        <>
+           
         <div className="descp">
           
             <h1>New Collection Shoes NC-001</h1>
@@ -14,6 +17,7 @@ export const ProductDescription = () => {
             <Link to="/cart" className="detail-cart" >
                                     Add to cart
                                 </Link>
-        </div>
+            </div>
+            </>
     )
 }
